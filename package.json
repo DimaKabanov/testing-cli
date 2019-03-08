@@ -1,0 +1,49 @@
+{
+  "name": "testing-cli",
+  "version": "0.1.0",
+  "description": "Learning testing",
+  "main": "dist/index.js",
+  "bin": {
+    "hexlet": "dist/bin/cli.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaKabanov/testing-cli.git"
+  },
+  "keywords": [
+    "jest",
+    "js",
+    "testing"
+  ],
+  "author": "Dmitry Kabanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaKabanov/testing-cli/issues"
+  },
+  "homepage": "https://github.com/DimaKabanov/testing-cli#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "jest": "^24.1.0",
+    "jest-cli": "^24.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
