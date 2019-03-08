@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DimaKabanov/testing-cli.svg?branch=master)](https://travis-ci.org/DimaKabanov/testing-cli)
+
 CLI testing
 =========
 
