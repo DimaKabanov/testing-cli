@@ -4,8 +4,11 @@
   "description": "Learning testing",
   "main": "dist/index.js",
   "bin": {
-    "hexlet": "dist/bin/weather.js"
+    "weather": "dist/bin/weather.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
