@@ -1,6 +1,6 @@
 {
   "name": "testing-cli",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "description": "Learning testing",
   "main": "dist/index.js",
   "bin": {
