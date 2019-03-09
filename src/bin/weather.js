@@ -8,8 +8,12 @@ commander
   .arguments('<city>')
   .description('Get weather by city')
   .action(async (city) => {
-    const currentWeather = await weather(city);
-    console.log(currentWeather);
+    try {
+      const currentWeather = await weather(city);
+      console.log(currentWeather);
+    } catch (error) {
+      console.log('Error:', `${city} -`, error.response.data.message);
+    }
   });
 
 commander.parse(process.argv);
