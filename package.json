@@ -4,7 +4,7 @@
   "description": "Learning testing",
   "main": "dist/index.js",
   "bin": {
-    "hexlet": "dist/bin/cli.js"
+    "hexlet": "dist/bin/weather.js"
   },
   "scripts": {
     "test": "jest",
@@ -34,6 +34,7 @@
     "@babel/preset-env": "^7.3.4",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
+    "delay": "^4.1.0",
     "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-babel": "^5.3.0",
@@ -41,9 +42,14 @@
     "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
     "jest": "^24.1.0",
-    "jest-cli": "^24.1.0"
+    "jest-cli": "^24.1.0",
+    "nock": "^10.0.6"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "@babel/polyfill": "^7.2.5",
+    "axios": "^0.18.0",
+    "commander": "^2.19.0",
+    "lodash": "^4.17.11",
+    "readline-sync": "^1.4.9"
   }
 }

@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npx babel-node 'src/bin/cli.js' 10
+	npx babel-node 'src/bin/weather.js' 'London'
 
 build:
 	rm -rf dist
