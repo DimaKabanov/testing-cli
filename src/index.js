@@ -16,6 +16,7 @@ export default async (city) => {
     const parseredData = parse(data);
     return render(parseredData);
   } catch (error) {
-    return error.response.data.message;
+    console.log('Error:', `${city} -`, error.response.data.message);
+    throw error;
   }
 };
